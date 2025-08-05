@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✅ Smart To-Do App
 
-## Getting Started
+🎯 **An AI-powered full-stack productivity app** built using Next.js, Firebase, Tailwind CSS — developed with Cursor AI, Replit, and GitHub in sync.
 
-First, run the development server:
+🧠 This project demonstrates the modern 2025 AI-assisted developer workflow: coding with Claude in Cursor, deploying via Replit, syncing with GitHub, and going live with Vercel.
+
+---
+
+## 🌐 Live Demo
+
+👉 [**View Live App**](https://cursor-replit-apps.vercel.app/)  
+_Deployed on Vercel – login required to test full functionality_
+
+---
+
+## 📦 Features
+
+- ✅ **Google Sign-In**
+- 📄 **Create / Read / Update / Delete tasks**
+- 🔄 **Live Firestore sync**
+- 💾 **Persistent data across sessions**
+- 📱 **Responsive Tailwind design**
+- ⚡ **Fast AI-generated frontend via [v0.dev](https://v0.dev)**
+
+---
+
+## 🚀 Tech Stack
+
+| Layer          | Tool/Tech                           |
+|----------------|-------------------------------------|
+| Frontend       | Next.js 14 (App Router)             |
+| Styling        | Tailwind CSS                        |
+| State / DB     | Firebase Firestore + Auth           |
+| Deployment     | Vercel (Frontend)                   |
+| AI Assistance  | Cursor AI + Claude + v0.dev         |
+| Collaboration  | Git + GitHub + Replit               |
+
+---
+
+## 🤖 AI Dev Workflow Powered By
+
+- [`v0.dev`](https://v0.dev): for React/Tailwind code generation
+- [`Cursor`](https://www.cursor.sh): full AI developer IDE
+- `.cursor-rules`: local AI assistant behavior rules (not public)
+- Claude: for custom prompt-based refactoring
+- Replit: for testing, secrets management, and SSH sync
+
+---
+
+## 🧠 Project Purpose
+
+This app is part of a **multi-phase AI developer bootcamp**, showing how to:
+
+- Use AI to rapidly scaffold and build real-world apps
+- Learn modern full-stack development with AI in the loop
+- Connect code editors (Cursor), platforms (Replit), and cloud services (Firebase, Vercel)
+
+---
+
+## 📁 File Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+todo-app/
+├── app/                   # Next.js App Router pages
+├── components/            # ToDoList component
+├── lib/                   # Firebase config
+├── public/                # Static assets
+├── .cursor-rules          # (ignored) AI assistant logic
+├── .env.example           # Required env variables
+├── package.json           # Project config
+└── tailwind.config.ts     # Tailwind setup
+
 ```
+## 🛠️ Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+git clone https://github.com/derril-tech/cursor-replit-apps
+cd cursor-replit-apps/todo-app
+npm install
+cp .env.example .env  # Fill in your Firebase config
+npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Required ENV Variables
 
-## Learn More
+| Name                                 | Description                |
+| ------------------------------------ | -------------------------- |
+| NEXT\_PUBLIC\_FIREBASE\_API\_KEY     | From Firebase              |
+| NEXT\_PUBLIC\_FIREBASE\_AUTH\_DOMAIN | `your-app.firebaseapp.com` |
+| NEXT\_PUBLIC\_FIREBASE\_PROJECT\_ID  | Project ID                 |
+| NEXT\_PUBLIC\_FIREBASE\_APP\_ID      | App ID                     |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+©️ Author
+🧑‍💻 Derril Filemon — AI Engineer | Full-Stack Developer | Replit + Cursor Specialist
+🌍 Currently building multiple apps with LangChain, Claude, and full AI workflow tools.
