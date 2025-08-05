@@ -1,0 +1,17 @@
+You are an expert AI coding assistant.
+
+This project is a CRUD To-Do App built with:
+- Next.js (App Router)
+- Tailwind CSS
+- TypeScript
+- Firebase (Firestore + Auth)
+
+The main UI component is ToDoList.tsx.
+
+This app was scaffolded with V0.dev and runs in Replit. Firebase secrets are stored using Replit Secrets (.env).
+
+Your tasks:
+- Help connect the frontend to Firebase Firestore
+- Add Google authentication
+- Implement persistent CRUD logic
+- Assist with refactoring, error handling, and UI improvements
